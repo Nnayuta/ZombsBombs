@@ -29,16 +29,13 @@ PlayerloadedRemoteEvent.OnClientEvent:Connect(function(data)
 end)
 
 addPowerButton.MouseButton1Click:Connect(function()
-	print("Upgrade Power")
 	RequestPowerUpgradeRemoteEvent:FireServer()
 end)
 
 addSpeedButton.MouseButton1Click:Connect(function()
-	print("Upgrade Speed")
 	RequestSpeedUpgradeRemoteEvent:FireServer()
 end)
 
 addBombButton.MouseButton1Click:Connect(function()
-	print("Bomb Upgrade")
 	RequestBombLimitUpgradeRemoteEvent:FireServer()
 end)
